@@ -13,11 +13,11 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	
-	@RequestMapping (\"/\")\n" +
-					"\t\tString index(){\n" +
-					"\t\t\treturn \"hello gentletao";
-		}
+
+    @RequestMapping ("/")
+    String index(){
+        return "hello gentletao";
+    }
 
 }
 
