@@ -14,5 +14,5 @@ Class-Path: spring-boot-1.5.19.RELEASE.jar spring-boot-starter-logging
  jar slf4j-api-1.7.25.jar spring-aop-4.3.22.RELEASE.jar spring-core-4.
  3.22.RELEASE.jar jcl-over-slf4j-1.7.25.jar spring-boot-starter-web-1.
  5.19.RELEASE.jar
-Main-Class: com.example.demo.DemoApplication
+Main-Class: com.example.demo.application.DemoApplication
 

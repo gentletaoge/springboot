@@ -1,8 +1,7 @@
-package com.example.demo;
+package com.example.demo.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,9 +14,9 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
-	@RequestMapping ("/")
-		String index(){
-			return "hello gentletao";
+	@RequestMapping (\"/\")\n" +
+					"\t\tString index(){\n" +
+					"\t\t\treturn \"hello gentletao";
 		}
 
 }
