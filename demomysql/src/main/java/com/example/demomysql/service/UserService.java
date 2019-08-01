@@ -14,5 +14,28 @@ public class UserService {
     public User Sel(int id){
         return userMapper.Sel(id);
     }
+    public User SelByName(String name){
+        return userMapper.SelByName(name);
+    }
+
+    public boolean insert(User user){
+
+        return userMapper.insert(user);
+    }
+    public boolean insertSelective(User user){
+
+        return userMapper.insertSelective(user);
+    }
+
+    public boolean updateByPrimaryKeySelective(User user){
+
+        return userMapper.updateByPrimaryKeySelective(user);
+    }
+
+    public boolean deleteByPrimaryKey(int id){
+
+        return userMapper.deleteByPrimaryKey(id);
+    }
+
 }
 
