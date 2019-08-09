@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.example.demoshiro.dao.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demoshiro.entity.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="role" jdbcType="VARCHAR" property="role" />
+    </resultMap>
+
+    <select id="getPassword" parameterType="java.lang.String" resultType="java.lang.String">
+        select password from user where userName = #{username}
+    </select>
+
+    <select id="getRole" parameterType="java.lang.String" resultType="java.lang.String">
+        select role from user where userName = #{username}
+    </select>
+
+
+</mapper>
